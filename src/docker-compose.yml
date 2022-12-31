@@ -1,0 +1,15 @@
+services:
+  web-api:
+    build:
+      context: ./WebApi
+      dockerfile: Dockerfile
+    container_name: web-api
+    ports:
+      - "5001:5001"
+  angular-app:
+    build:
+      context: ./AngularApp
+      dockerfile: Dockerfile
+    container_name: angular-app
+    ports:
+      - "4200:4200"

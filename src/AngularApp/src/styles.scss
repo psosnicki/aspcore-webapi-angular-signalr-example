@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+.base-snackbar {
+    color: white;
+
+    .mat-simple-snackbar-action {
+        color: white;
+    }
+
+    .mat-snack-bar-container {
+        max-width: 100% !important;
+    }
+
+    --mdc-snackbar-supporting-text-size: 20px;
+}
+
+.error-snackbar {
+    @extend .base-snackbar;
+    --mdc-snackbar-container-color: red;
+}
+
+.warn-snackbar {
+    @extend .base-snackbar;
+    --mdc-snackbar-container-color: orange;
+}
+
+.success-snackbar {
+    @extend .base-snackbar;
+    --mdc-snackbar-container-color: green;
+}

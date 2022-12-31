@@ -1,0 +1,10 @@
+<h1>ASPNET WebApi SignalR Angular Real time chart example</h1>
+<div class="container">
+  <div clas="chart-wrapper">
+    <app-line-chart [data]="chart">
+    </app-line-chart>
+  </div>
+  <div class="table">
+    <app-chart-table [displayedColumns]="['id', 'name', 'value']" [dataSource]="dataSource"></app-chart-table>
+  </div>
+</div>
